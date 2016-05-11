@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'IcoMoon';
+	src: url('font/icomoon.eot');
+	src: url('font/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('font/icomoon.svg#IcoMoon') format('svg'),
+		url('font/icomoon.woff') format('woff'),
+		url('font/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.iconb:before, .icona:after {
+	font-family: 'IcoMoon';
+	content: attr(data-icon);
+}
+
+
+#slider-panels{
+	float: left;
+	height: 400px;
+	width: 1000px;
+	position: relative;
+}
+
+#page-next{
+	background-color: rgba(0,147,253,0.1);
+	height: 100px;
+	width: 40px;
+	position: absolute;
+	margin-top: -40px;
+	top: 50%;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+	line-height: 100px;
+	text-align: center;
+	right: 0px;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+	z-index: 1;
+}
+#page-next:hover {
+	background-color: rgba(0,147,253,0.5);
+	cursor: pointer;
+}
+#page-previous{
+	background-color: rgba(0,147,253,0.1);
+	height: 100px;
+	width: 40px;
+	margin-top: -40px;
+	position: absolute;
+	top: 50%;
+	font-size: 24px;
+	line-height: 100px;
+	color: rgba(255,255,255,1);
+	text-align: center;
+	left: 0px;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+	z-index: 1;
+}
+#page-previous:hover {
+	background-color: rgba(0,147,253,0.5);
+	cursor: pointer;
+}
