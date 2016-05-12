@@ -1,0 +1,142 @@
+@charset "utf-8";
+body{
+    font-family:verdana, Arial, Helvetica, "宋体", sans-serif;
+    font-size: 12px;
+}
+
+body ,div ,dl ,dt ,dd ,ol ,li ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,pre ,form ,fieldset ,input ,P ,blockquote ,th ,td ,img,
+INS {
+    margin: 0px;
+    padding: 0px;
+    border:0;
+}
+ol{
+    list-style-type: none;
+}
+img,input{
+    border:none;
+}
+
+a{
+    color:#198DD0;
+    text-decoration:none;
+}
+a:hover{
+    color:#ba2636;
+    text-decoration:underline;
+}
+a{blr:expression(this.onFocus=this.blur())}/*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+:focus{outline:0;}
+
+.talk{
+    height: 480px;
+    width: 335px;
+    margin: 0 auto;
+}
+
+
+/*讨论区*/
+.talk_recordbox{
+    min-height:80px;
+    color: #afafaf;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+.talk_recordbox:first-child{border-top:none;}
+.talk_recordbox:last-child{border-bottom:none;}
+.talk_recordbox .talk_recordtextbg{
+    float:left;
+    width:10px;
+    height:30px;
+    display:block;
+    background-image: url(../images/talk_recordtext.png);
+    background-repeat: no-repeat;
+    background-position: left top;}
+.talk_recordbox .talk_recordtext{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background-color:#fcfcfc;
+    width:240px;
+    height:auto;
+    display:block;
+    padding: 5px;
+    float:left;
+    color:#333333;
+}
+.talk_recordbox h3{
+    font-size:14px;
+    padding:2px 0 5px 0;
+    text-transform:uppercase;
+    font-weight: 100;
+
+}
+.talk_recordbox .user {
+    float:left;
+    display:inline;
+    height: 45px;
+    width: 45px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+/*自己发言样式*/
+.talk_recordboxme{
+    display:block;
+    min-height:80px;
+    color: #afafaf;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+.talk_recordboxme .talk_recordtextbg{
+    float:right;
+    width:10px;
+    height:30px;
+    display:block;
+    background-image: url(../images/talk_recordtextme.png);
+    background-repeat: no-repeat;
+    background-position: left top;}
+
+.talk_recordboxme .talk_recordtext{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background-color:#b8d45c;
+    width:240px;
+    height:auto;
+    padding: 5px;
+    color:#666;
+    font-size:12px;
+    float:right;
+
+}
+.talk_recordboxme h3{
+    font-size:14px;
+    padding:2px 0 5px 0;
+    text-transform:uppercase;
+    font-weight: 100;
+    color:#333333;
+
+}
+.talk_recordboxme .user{
+    float:right;
+    height: 45px;
+    width: 45px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display:inline;
+}

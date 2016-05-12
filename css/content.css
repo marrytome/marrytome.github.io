@@ -1,7 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+
 .blue-slide {
 	background: #4390EE;
 }
@@ -24,6 +21,16 @@
 	height:100%;
 }
 
+.talk{
+	height: 477px;
+	width: 335px;
+	margin: 0 auto;
+	padding-top: 50px;
+	background: url(../images/talkBg.png) no-repeat fixed top;
+}
+
 html,body{
 	height:100%;
 }
+
+

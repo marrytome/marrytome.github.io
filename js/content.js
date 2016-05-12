@@ -10,5 +10,14 @@ for (var j=0; j<resizes.length; j++) {
 }
 var mySwiper = new Swiper('.swiper-container',{
     loop: false,
-    
+	onInit: function(swiper){
+		swiperAnimateCache(swiper);
+		swiperAnimate(swiper);
+	},
+	onSlideChangeEnd: function(swiper){
+		swiperAnimate(swiper);
+	},
+	onTransitionEnd: function(swiper){
+		swiperAnimate(swiper);
+	}
 });
