@@ -10,6 +10,7 @@ for (var j=0; j<resizes.length; j++) {
 }
 var mySwiper = new Swiper('.swiper-container',{
     loop: false,
+	direction : 'vertical',
 	onInit: function(swiper){
 		swiperAnimateCache(swiper);
 		swiperAnimate(swiper);

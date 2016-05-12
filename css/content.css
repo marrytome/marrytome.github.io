@@ -29,6 +29,13 @@
 	background: url(../images/talkBg.png) no-repeat fixed top;
 }
 
+.word{
+	line-height: 100px;
+	text-align: center;
+	margin:0 auto;
+	height: 100px;
+}
+
 html,body{
 	height:100%;
 }
