@@ -1,6 +1,45 @@
+.typed-cursor{
+	opacity: 1;
+	font-weight: 100;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	-ms-animation: blink 0.7s infinite;
+	-o-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+0% { opacity:1; }
+50% { opacity:0; }
+100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-ms-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-o-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
 
 .blue-slide {
-	background: #4390EE;
+	/*background: #4390EE;*/
+	background-image: url("../images/bg1.jpg");
+	background-size: cover;
 }
 .red-slide {
 	background: #CA4040;
@@ -26,14 +65,48 @@
 	width: 335px;
 	margin: 0 auto;
 	padding-top: 50px;
-	background: url(../images/talkBg.png) no-repeat;
+	background: url(../images/background1.png) no-repeat;
 }
 
 .word{
+	font-family: "YouYuan";
+	font-size: large;
 	line-height: 100px;
 	text-align: center;
 	margin:0 auto;
 	height: 100px;
+}
+
+.word0{
+	font-family: "YouYuan";
+	font-size:xx-large;
+	line-height: 500px;
+	text-align: center;
+	margin:0 auto;
+	height: 500px;
+}
+
+.scene0{
+	/*display: -webkit-flex;*/
+	/*display: flex;*/
+	/*-webkit-align-items: center;*/
+	/*align-items: center;*/
+	/*-webkit-justify-content: center;*/
+	/*justify-content: center;*/
+	width: 100%;
+	height: 50%;
+	margin-top: 15%;
+	background-image: url("../images/bg0.jpg");
+	background-size: cover;
+}
+
+.scene0-slide{
+	/*display: -webkit-flex;*/
+	/*display: flex;*/
+	/*-webkit-align-items: center;*/
+	/*align-items: center;*/
+	/*-webkit-justify-content: center;*/
+	/*justify-content: center;*/
 }
 
 html,body{
